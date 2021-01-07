@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+
+<ul>
+{% for car in auto %}
+
+<li>{{ car }}</li>
+
+{% endfor %}
+
+</ul>
+
+<table border='1' cellspacing='1px' cellpadding='10px' bgcolor='yellow'>
+
+<tr>
+<td>Name</td>
+<td>Alter</td>
+<td>Hobby</td>
+</tr>
+<tr>
+<td>{{benutzer.name}}</td>
+<td>{{benutzer.alter}}</td>
+<td>{{benutzer.hobby}}</td>
+</tr>
+
+</table>
+
+
+<h1>{{msg}}</h1>
+
+
+{% endblock %}

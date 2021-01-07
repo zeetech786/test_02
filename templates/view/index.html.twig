@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+
+<h1>Hello {{ tag }}</h1>
+<h1>Hello {{ user.alter }}</h1>
+<h1>Hello {{ user.name }}</h1>
+
+<ul>
+
+{% for obstnew in obst %}
+
+<li>{{obstnew}}</li>
+
+
+{% endfor %}
+</ul>
+{% endblock %}
